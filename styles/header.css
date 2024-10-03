@@ -33,5 +33,9 @@
     background-color: var(--branco);
 }
 .lista-menu-titulo{
-    color: var(--laranja)
+    color: var(--laranja);
+    font-weight: 700;   
+}
+.container-botao{
+    display: none;
 }
