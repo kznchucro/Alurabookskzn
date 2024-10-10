@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    
 </head>
 
 <body>
@@ -26,19 +28,19 @@
                     <a href="#" class="lista-menu-link">Programação</a>
                 </li>
                 <li class="lista-item">
-                    <a href="#" class="lista-menu-link">Front-end</a>
+                    <a href="#" class="lista-menu-link">Front-End</a>
                 </li>
                 <li class="lista-item">
-                    <a href="#" class="lista-menu-link">Infraestutura</a>
+                    <a href="#" class="lista-menu-link">Infraestrutura</a>
                 </li>
                 <li class="lista-item">
-                    <a href="#" class="lista-menu-link">Bussines</a>
+                    <a href="#" class="lista-menu-link">Business</a>
                 </li>
                 <li class="lista-item">
                     <a href="#" class="lista-menu-link">Design & UX</a>
                 </li>
             </ul>
-            <img src="img/Logo.png" alt="Logo da ALuraBooks">
+            <img src="img/Logo.png" alt="Logo da AluraBooks">
         </div>
         <div class="container">
             <a href="#"><img src="img/Favoritos.png" alt="Meus favoritos" class="container-imagem"></a>
@@ -46,11 +48,48 @@
             <a href="#"><img src="img/Perfil.png" alt="Meu perfil" class="container-imagem"></a>
         </div>
     </header>
-    <section class="banner">
+    <section class="banner" Slide 1>
         <h2 class="banner-titulo">Já sabe por onde começar?</h2>
         <p class="banner-texto">Encontre o que precisa para seu desenvolvimento!</p>
-        <input type="search" class="banner-pesquisa" placeholder="Qual será sua proxima leitura?">   
+        <input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Novos lançamentos</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/ApacheKafka.png" alt="Livro sobre apache Kafka da AluraBooks">
+                </div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.png"
+                        alt="livro sobre Acessibilidade da AluraBooks"></div>
+                <div class="swiper-slide"><img src="img/Angular.png" alt="Livro sobre Angular da AluraBooks"></div>
+                <div class="swiper-slide"><img src="img/Arquitetura.png" alt="Livro sobre Arquitetura da AluraBooks">
+                </div>
+                <div class="swiper-slide"><img src="img/Construct2.png" alt="Livro sobre Construct2 da AluraBooks">
+                </div>
+                <div class="swiper-slide"><img src="img/Gestão.png" alt="Livro sobre Gestão da AluraBooks"></div>
+                <div class="swiper-slide"><img src="img/Gestão2.png" alt="Livro sobre Gestão2 da AluraBooks"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.png"
+                        alt="Livro sobre Guia Front-End da AluraBooks"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 100,
+        });
+    </script>
 </body>
 
 </html>
