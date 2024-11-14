@@ -36,7 +36,7 @@
     margin: 1em;
     padding: 1em;
 }
-.descricao{
+.descricao-titulo{
     color: var(--laranja);
     font-weight: 700;
 }
